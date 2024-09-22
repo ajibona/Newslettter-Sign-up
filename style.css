@@ -1,6 +1,6 @@
 
 /* ----- Fonts SetUP Sections ----------*/
-@font-face {
+/* @font-face {
   font-family: "Roboto-Bold";
   src: 
         local('Roboto-Bold'),
@@ -16,7 +16,7 @@
       url(/assets/fonts/Roboto-Regular.ttf);
   font-style: normal;
   font-weight: 400;
-}
+} */
 
 *,
 ::after,
@@ -33,10 +33,12 @@
   --cc-Charcoal-Grey: #36384e;
   --cc-Grey: #9294a0;
   --cc-White: #ffffff;
+
+  --ff-fonts-family: "Roboto", sans-serif;
 }
 
 body{
-  font-family: 'Roboto-regular';
+  font-family: var(--ff-fonts-family);
   min-height: 100vh;
   font-size: 16px;
 }
@@ -52,7 +54,7 @@ body{
 
 h1{
   font-size: 2.8rem;
-  font-family: 'Roboto-Bold';
+  font-weight: 700;
   margin-bottom: 20px;
   color: var(--cc-Dark-Slate-Grey);
 }
@@ -83,7 +85,7 @@ ul li{
 
 
 ul li::before{
-  content: url(/assets/images/icon-list.svg);
+  content: url("assets/images/icon-list.svg");
 }
 
 .email-layout{
@@ -92,7 +94,7 @@ ul li::before{
 }
 
 #email-label{
-  font-family: "Roboto-Bold";
+  font-family: var(--ff-fonts-family);
   font-size: .85rem;
   color: var(--cc-Dark-Slate-Grey);
 }
@@ -101,7 +103,7 @@ ul li::before{
   padding: 20px 25px;
   border: 1px solid var(--cc-Grey);
   border-radius: 10px;
-  font-family: "Roboto-regular";
+  font-family: var(--ff-fonts-family);
   margin-bottom: 20px;
   outline: none;
   font-size: 1rem;
@@ -121,7 +123,7 @@ ul li::before{
 button{
   width: 100%;
   padding: 20px;
-  font-family: "Roboto-regular";
+  font-family: var(--ff-fonts-family);
   font-size: 1.05rem;
   border: none;
   color: var(--cc-White);
@@ -175,6 +177,7 @@ button:hover{
     width: 100%;
     padding: 1rem;
  }
+
  .desktop-image{
   min-width: 360px;
   max-height: 460px;
